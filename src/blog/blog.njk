@@ -1,0 +1,15 @@
+---
+layout: layouts/blog.html
+title: This Is The Blog Page
+description: This Is The Blog Page
+---
+
+<div>
+<h1>{{title}}</h1>
+<h2>Go Back To <a href='/' style="color:inherit;">Home Page</a></h2>
+<ul>
+{% for post in collections.posts%}
+<li><a href={{post.url}}>{{post.data.title}}</a></li>
+{% endfor %}
+</ul>
+<div>

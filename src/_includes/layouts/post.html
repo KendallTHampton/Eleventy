@@ -1,0 +1,33 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <meta name="description" content="{{description}}" />
+    <link rel="stylesheet" href="/css/post.css" />
+{% endblock %}
+
+<! -- creating content for the blog post we can wrap -->
+{% block content%}
+
+<article class='post__content'>
+    <h1>
+    {{title}}
+    </h1>
+    <p>
+        <time>
+        {{date}}
+        </time>
+    </p>
+    <ul>
+        {%for tag in tags%}
+            <li>
+                <a href="/blog/tag/{{tag | slugify }}">
+                {{tag}}
+                </a>
+            </li>
+
+        {% endfor%}
+    </ul>
+{{content | safe}}
+</article>
+
+{% endblock%}

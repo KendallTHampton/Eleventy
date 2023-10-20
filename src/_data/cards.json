@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Blog Page",
+        "link": "/blog",
+        "linkText": "Takes You To Our Blog",
+        "raised": true
+    },
+    {
+    "title": "News Page",
+    "link": "/news",
+    "linkText": "Takes You To The News Page",
+    "raised": true
+    },
+    {
+        "title": "Home Page",
+        "link": "/",
+        "linkText": "Takes You To The Home Page",
+        "raised": true
+    },
+    {
+        "title": "Contact Page",
+        "link": "/contact",
+        "linkText": "Takes You To The Contact Page",
+        "raised": true
+    }
+]

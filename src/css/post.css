@@ -1,0 +1,9 @@
+.post__content {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}

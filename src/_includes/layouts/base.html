@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "basehead.html" %}
+    {% block head %}{% endblock %}
+</head>
+<body>
+{% block content%}
+    <!-- Anything using this template (page layout) is safe to pass in the body -->
+    {{content | safe}}
+
+{% endblock %}
+</body>
+
+</html>

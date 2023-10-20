@@ -1,0 +1,55 @@
+.news__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.news__container a {
+    text-decoration: none;
+}
+
+
+
+.news__card {
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.news__card:hover {
+    transform: translateY(-3px);
+    /* Gentle lift on hover for interactive feel */
+}
+
+.news__img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    /* Ensures images cover the area without distortion */
+    border-radius: 5px;
+    /* A slight border-radius for images */
+    margin-bottom: 1rem;
+    /* Some margin to separate the image from the title */
+}
+
+.news__card p {
+    text-decoration: none;
+    color: #333;
+    /* Dark text for better readability */
+    font-weight: bold;
+    text-align: center;
+    /* Center align text if it breaks into multiple lines */
+}
+
+.news__card:hover p {
+    color: #0077cc;
+    /* Changes text color on hover */
+}

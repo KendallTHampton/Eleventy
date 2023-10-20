@@ -1,0 +1,16 @@
+---
+layout: layouts/home.html
+title: "Eleventy Crash Course #1"
+description: "Home Page"
+---
+<!--  Need to set your template here inside these three dashes -->
+<h1>{{title}}</h1>
+<h3>This Is The Home Page of The Blog</h3>
+<div class="home-card__container">
+    {% for card in cards %}
+       {%Card title=card.title, link=card.link, linkText=card.linkText, raised=card.raised %}
+    {% endfor %}
+<div>
+
+
+

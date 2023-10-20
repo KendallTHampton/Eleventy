@@ -1,0 +1,14 @@
+const { html } = require('common-tags');
+
+// Allows for the creation of a card component with a title, link, and link text. Common Tags is used to allow for the use of html in the template literal.
+
+function Card({title, link, linkText, raised}){
+    return html`
+    <div class="${`card__container ${raised ? `card__container--raised` : ``}`}">
+        <h2 class="card__title">${title}</h2>
+        <a class="card__link" href="${link}">${linkText}</a>
+    </div>
+    `;
+}
+
+module.exports = Card

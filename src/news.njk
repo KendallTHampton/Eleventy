@@ -1,0 +1,26 @@
+---
+layout: layouts/home.html
+title: "New York Times News"
+description: "The News Page"
+---
+<h1>{{title}}</h1>
+
+{# Telling It To Dump The Data #}
+
+
+<h3>These Are The Top Stories</h3>
+<div class="news__container">
+    {% for story in topStories %}
+    <a class="news__card" href="{{story.url}}" target="_blank" rel="noopener noreferrer">
+        {% if story.multimedia and story.multimedia[0] %}
+        
+        <img class="news__img" src="{{story.multimedia[0].url}}" alt="{{story.multimedia[0].caption}}"/>
+
+        {% endif %}
+
+        <p>
+            {{story.title}}
+        </p>
+    </a>
+    {% endfor %}
+</div>
